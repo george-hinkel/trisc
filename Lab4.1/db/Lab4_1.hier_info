@@ -1,0 +1,26 @@
+|Lab4_1
+a <= threebitdecoder:inst.zero
+X => threebitdecoder:inst.X
+Y => threebitdecoder:inst.Y
+Z => threebitdecoder:inst.Z
+b <= threebitdecoder:inst.one
+c <= threebitdecoder:inst.two
+d <= threebitdecoder:inst.three
+e <= threebitdecoder:inst.four
+f <= threebitdecoder:inst.five
+g <= threebitdecoder:inst.six
+
+
+|Lab4_1|threebitdecoder:inst
+X => Decoder0.IN0
+Y => Decoder0.IN1
+Z => Decoder0.IN2
+zero <= zero.DB_MAX_OUTPUT_PORT_TYPE
+one <= one.DB_MAX_OUTPUT_PORT_TYPE
+two <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+three <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+four <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+five <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+six <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,113 @@
+|lab7
+Q2 <= 74112:inst.1Q
+X => 7410:inst2.2
+X => 7400:inst6.2
+X => 7404:inst14.2
+Enter => 74112:inst1.1CLK
+Enter => 74112:inst.1CLK
+Enter => 74112:inst.2CLK
+Reset/Lock => 74112:inst1.1CLRN
+Reset/Lock => 74112:inst.1CLRN
+Reset/Lock => 74112:inst.2CLRN
+Q1 <= 74112:inst.2Q
+Q0 <= 74112:inst1.1Q
+Open <= 74112:inst.1Q
+NQ0 <= 74112:inst1.1QN
+NQ2 <= 74112:inst.1QN
+NQ1 <= 74112:inst.2QN
+
+
+|lab7|74112:inst
+2QN <= 5.DB_MAX_OUTPUT_PORT_TYPE
+2PRN => 7.PRESET
+2CLRN => 7.ACLR
+2K => 7~1.IN0
+2J => 7~0.IN1
+2CLK => 24.IN0
+2Q <= 7.DB_MAX_OUTPUT_PORT_TYPE
+1QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
+1PRN => 8.PRESET
+1CLRN => 8.ACLR
+1K => 8~1.IN0
+1J => 8~0.IN1
+1CLK => 23.IN0
+1Q <= 8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|7404:inst12
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|lab7|7410:inst2
+1 <= 5.DB_MAX_OUTPUT_PORT_TYPE
+4 => 5.IN0
+3 => 5.IN1
+2 => 5.IN2
+
+
+|lab7|74112:inst1
+2QN <= 5.DB_MAX_OUTPUT_PORT_TYPE
+2PRN => 7.PRESET
+2CLRN => 7.ACLR
+2K => 7~1.IN0
+2J => 7~0.IN1
+2CLK => 24.IN0
+2Q <= 7.DB_MAX_OUTPUT_PORT_TYPE
+1QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
+1PRN => 8.PRESET
+1CLRN => 8.ACLR
+1K => 8~1.IN0
+1J => 8~0.IN1
+1CLK => 23.IN0
+1Q <= 8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|7400:inst6
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|lab7|7404:inst13
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|lab7|7400:inst4
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|lab7|7404:inst14
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|lab7|7400:inst9
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|lab7|7410:inst8
+1 <= 5.DB_MAX_OUTPUT_PORT_TYPE
+4 => 5.IN0
+3 => 5.IN1
+2 => 5.IN2
+
+
+|lab7|7410:inst3
+1 <= 5.DB_MAX_OUTPUT_PORT_TYPE
+4 => 5.IN0
+3 => 5.IN1
+2 => 5.IN2
+
+
+|lab7|7400:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+

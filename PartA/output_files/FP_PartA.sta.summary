@@ -1,0 +1,173 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'Lab9:inst|Lab9_2:inst2|state.S4'
+Slack : -5.704
+TNS   : -27.283
+
+Type  : Slow Model Setup 'CLOCK'
+Slack : -2.564
+TNS   : -46.211
+
+Type  : Slow Model Setup 'Lab6:inst6|nxt[0]'
+Slack : -2.433
+TNS   : -22.070
+
+Type  : Slow Model Setup 'Lab9:inst|Lab9_1:inst|op[0]'
+Slack : -0.682
+TNS   : -1.198
+
+Type  : Slow Model Setup 'Lab9:inst|Lab9_2:inst2|state.S5'
+Slack : 0.307
+TNS   : 0.000
+
+Type  : Slow Model Hold 'CLOCK'
+Slack : -4.288
+TNS   : -27.135
+
+Type  : Slow Model Hold 'Lab9:inst|Lab9_1:inst|op[0]'
+Slack : -3.170
+TNS   : -9.859
+
+Type  : Slow Model Hold 'Lab9:inst|Lab9_2:inst2|state.S4'
+Slack : -2.210
+TNS   : -2.210
+
+Type  : Slow Model Hold 'Lab6:inst6|nxt[0]'
+Slack : -0.114
+TNS   : -0.257
+
+Type  : Slow Model Hold 'Lab9:inst|Lab9_2:inst2|state.S5'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'Lab9:inst|Lab9_2:inst2|state.S4'
+Slack : -2.782
+TNS   : -8.608
+
+Type  : Slow Model Recovery 'Lab9:inst|Lab9_2:inst2|state.S5'
+Slack : -2.759
+TNS   : -8.920
+
+Type  : Slow Model Recovery 'Lab9:inst|Lab9_1:inst|op[0]'
+Slack : 3.473
+TNS   : 0.000
+
+Type  : Slow Model Removal 'Lab9:inst|Lab9_1:inst|op[0]'
+Slack : -4.330
+TNS   : -8.650
+
+Type  : Slow Model Removal 'Lab9:inst|Lab9_2:inst2|state.S5'
+Slack : 2.150
+TNS   : 0.000
+
+Type  : Slow Model Removal 'Lab9:inst|Lab9_2:inst2|state.S4'
+Slack : 2.590
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK'
+Slack : -2.064
+TNS   : -125.769
+
+Type  : Slow Model Minimum Pulse Width 'Lab9:inst|Lab9_2:inst2|state.S4'
+Slack : -0.611
+TNS   : -9.776
+
+Type  : Slow Model Minimum Pulse Width 'Lab9:inst|Lab9_2:inst2|state.S5'
+Slack : -0.611
+TNS   : -4.888
+
+Type  : Slow Model Minimum Pulse Width 'Lab6:inst6|nxt[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Lab9:inst|Lab9_1:inst|op[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'Lab9:inst|Lab9_2:inst2|state.S4'
+Slack : -2.392
+TNS   : -10.161
+
+Type  : Fast Model Setup 'CLOCK'
+Slack : -1.460
+TNS   : -20.167
+
+Type  : Fast Model Setup 'Lab6:inst6|nxt[0]'
+Slack : -0.357
+TNS   : -2.350
+
+Type  : Fast Model Setup 'Lab9:inst|Lab9_1:inst|op[0]'
+Slack : 0.011
+TNS   : 0.000
+
+Type  : Fast Model Setup 'Lab9:inst|Lab9_2:inst2|state.S5'
+Slack : 0.665
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CLOCK'
+Slack : -2.401
+TNS   : -16.585
+
+Type  : Fast Model Hold 'Lab9:inst|Lab9_1:inst|op[0]'
+Slack : -1.674
+TNS   : -4.949
+
+Type  : Fast Model Hold 'Lab9:inst|Lab9_2:inst2|state.S4'
+Slack : -1.368
+TNS   : -1.368
+
+Type  : Fast Model Hold 'Lab6:inst6|nxt[0]'
+Slack : -0.086
+TNS   : -0.232
+
+Type  : Fast Model Hold 'Lab9:inst|Lab9_2:inst2|state.S5'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'Lab9:inst|Lab9_2:inst2|state.S4'
+Slack : -1.510
+TNS   : -5.150
+
+Type  : Fast Model Recovery 'Lab9:inst|Lab9_2:inst2|state.S5'
+Slack : -1.502
+TNS   : -5.206
+
+Type  : Fast Model Recovery 'Lab9:inst|Lab9_1:inst|op[0]'
+Slack : 2.141
+TNS   : 0.000
+
+Type  : Fast Model Removal 'Lab9:inst|Lab9_1:inst|op[0]'
+Slack : -2.120
+TNS   : -4.231
+
+Type  : Fast Model Removal 'Lab9:inst|Lab9_2:inst2|state.S5'
+Slack : 1.858
+TNS   : 0.000
+
+Type  : Fast Model Removal 'Lab9:inst|Lab9_2:inst2|state.S4'
+Slack : 2.057
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK'
+Slack : -2.000
+TNS   : -120.380
+
+Type  : Fast Model Minimum Pulse Width 'Lab9:inst|Lab9_2:inst2|state.S4'
+Slack : -0.500
+TNS   : -8.000
+
+Type  : Fast Model Minimum Pulse Width 'Lab9:inst|Lab9_2:inst2|state.S5'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'Lab6:inst6|nxt[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Lab9:inst|Lab9_1:inst|op[0]'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------

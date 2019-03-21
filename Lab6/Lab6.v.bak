@@ -1,0 +1,11 @@
+module Lab6(in,out,LD,CLR,INC);
+	input [3:0] in;
+	input LD,CLR,INC;
+	output reg [3:0] out;
+		always@(negedge CLR)
+			begin out = 4'b0000; end
+		always@(negedge INC)
+			out<=out+1;
+		always@(negedge LD)
+			out<=in;
+endmodule

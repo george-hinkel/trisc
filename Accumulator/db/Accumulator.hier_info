@@ -1,0 +1,94 @@
+|Accumulator
+ACC[3] <= ProgramCounter:inst.Dout[3]
+ACC[2] <= ProgramCounter:inst.Dout[2]
+ACC[1] <= ProgramCounter:inst.Dout[1]
+ACC[0] <= ProgramCounter:inst.Dout[0]
+LD => 7404:inst3.2
+INC => 7404:inst4.2
+CLR => 7404:inst5.2
+ALUW => MemAddrReg:inst2.LD
+ALU[0] => MemAddrReg:inst2.in1[0]
+ALU[1] => MemAddrReg:inst2.in1[1]
+ALU[2] => MemAddrReg:inst2.in1[2]
+ALU[3] => MemAddrReg:inst2.in1[3]
+MDO[0] => MemAddrReg:inst2.in2[0]
+MDO[1] => MemAddrReg:inst2.in2[1]
+MDO[2] => MemAddrReg:inst2.in2[2]
+MDO[3] => MemAddrReg:inst2.in2[3]
+
+
+|Accumulator|ProgramCounter:inst
+Dout[3] <= 74193:inst.QA
+Dout[2] <= 74193:inst.QB
+Dout[1] <= 74193:inst.QC
+Dout[0] <= 74193:inst.QD
+Din[3] => 74193:inst.A
+Din[2] => 74193:inst.B
+Din[1] => 74193:inst.C
+Din[0] => 74193:inst.D
+CLR => 7404:inst5.2
+UP => 7404:inst6.2
+LD => 74193:inst.LDN
+
+
+|Accumulator|ProgramCounter:inst|74193:inst
+BON <= 28.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 44.IN0
+LDN => 43.IN0
+B => 53.IN2
+A => 52.IN2
+DN => 90.IN0
+UP => 89.IN0
+C => 54.IN2
+D => 55.IN2
+CON <= 27.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 23.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 24.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 25.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Accumulator|ProgramCounter:inst|7404:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|Accumulator|ProgramCounter:inst|7404:inst6
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|Accumulator|7404:inst3
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|Accumulator|7404:inst4
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|Accumulator|7404:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|Accumulator|MemAddrReg:inst2
+in1[0] => nxt~3.DATAB
+in1[1] => nxt~2.DATAB
+in1[2] => nxt~1.DATAB
+in1[3] => nxt~0.DATAB
+in2[0] => nxt~3.DATAA
+in2[1] => nxt~2.DATAA
+in2[2] => nxt~1.DATAA
+in2[3] => nxt~0.DATAA
+out[0] <= nxt~3.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= nxt~2.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= nxt~1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= nxt~0.DB_MAX_OUTPUT_PORT_TYPE
+LD => nxt~0.OUTPUTSELECT
+LD => nxt~1.OUTPUTSELECT
+LD => nxt~2.OUTPUTSELECT
+LD => nxt~3.OUTPUTSELECT
+
+

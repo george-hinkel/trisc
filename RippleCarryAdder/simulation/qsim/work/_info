@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\glh2411\Documents\RippleCarryAdder\simulation\qsim
+vRippleCarryAdder
+Z1 !s100 K86oXao94Q7]<PdVeY8G22
+Z2 IlD;ILAMO9RZFKlo;HMhhh2
+Z3 V:oUnAJ6c>GN49NCM2h`Cl0
+Z4 dC:\Users\glh2411\Documents\RippleCarryAdder\simulation\qsim
+Z5 w1517002320
+Z6 8RippleCarryAdder.vo
+Z7 FRippleCarryAdder.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|RippleCarryAdder.vo|
+Z10 o-work work -O0
+Z11 n@ripple@carry@adder
+!i10b 1
+!s85 0
+Z12 !s108 1517002320.790000
+Z13 !s107 RippleCarryAdder.vo|
+!s101 -O0
+vRippleCarryAdder_vlg_check_tst
+!i10b 1
+Z14 !s100 `>X^flX:LB^TPRB;dZR_B3
+Z15 I@=dGV_ZPFoVR]aHF8aRHD2
+Z16 Vh0W[jU0Eg@_YEX>hcNk:L1
+R4
+Z17 w1517002319
+Z18 8RippleCarryAdder.vt
+Z19 FRippleCarryAdder.vt
+L0 73
+R8
+r1
+!s85 0
+31
+Z20 !s108 1517002320.915000
+Z21 !s107 RippleCarryAdder.vt|
+Z22 !s90 -work|work|RippleCarryAdder.vt|
+!s101 -O0
+R10
+Z23 n@ripple@carry@adder_vlg_check_tst
+vRippleCarryAdder_vlg_sample_tst
+!i10b 1
+Z24 !s100 bZTMF>8HgcCVR[d9FUSga3
+Z25 I>PJIZX;c;AN^dG<3ZO;4f3
+Z26 Vb1]lF`[07hHJz<kn_m@Ak3
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@ripple@carry@adder_vlg_sample_tst
+vRippleCarryAdder_vlg_vec_tst
+!i10b 1
+Z28 !s100 oiBEDU;@NK:1l]T?92HYn3
+Z29 IV4L<c63;Zb<7SR<JZ55Q53
+Z30 V?aATIkhDMR<C5VaK6O<_31
+R4
+R17
+R18
+R19
+Z31 L0 276
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@ripple@carry@adder_vlg_vec_tst

@@ -1,0 +1,21 @@
+|Lab4_4
+W => Decoder0.IN0
+X => Decoder0.IN1
+Y => Decoder0.IN2
+Z => Decoder0.IN3
+ao <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+bo <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+do <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+eo <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+fo <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+go <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+ai <= <VCC>
+bi <= <VCC>
+ci <= <VCC>
+di <= <VCC>
+ei <= <VCC>
+fi <= <VCC>
+gi <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+

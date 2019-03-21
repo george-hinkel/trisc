@@ -1,0 +1,43 @@
+|Lab9_2
+op[0] => Equal0.IN21
+op[0] => Equal1.IN21
+op[1] => Equal0.IN20
+op[1] => Equal1.IN20
+op[2] => Equal0.IN19
+op[2] => Equal1.IN19
+op[3] => Equal0.IN18
+op[3] => Equal1.IN18
+op[4] => Equal0.IN17
+op[4] => Equal1.IN17
+op[5] => Equal0.IN16
+op[5] => Equal1.IN16
+op[6] => Equal0.IN15
+op[6] => Equal1.IN15
+op[7] => Equal0.IN14
+op[7] => Equal1.IN14
+op[8] => Equal0.IN13
+op[8] => Equal1.IN13
+op[9] => Equal0.IN12
+op[9] => Equal1.IN12
+op[10] => Equal0.IN11
+op[10] => Equal1.IN11
+CLK => state~1.DATAIN
+CLR => state~3.DATAIN
+control[0] <= control[0].DB_MAX_OUTPUT_PORT_TYPE
+control[1] <= <GND>
+control[2] <= control[2].DB_MAX_OUTPUT_PORT_TYPE
+control[3] <= control[3].DB_MAX_OUTPUT_PORT_TYPE
+control[4] <= control.DB_MAX_OUTPUT_PORT_TYPE
+control[5] <= <GND>
+control[6] <= <GND>
+control[7] <= control[2].DB_MAX_OUTPUT_PORT_TYPE
+control[8] <= control[8].DB_MAX_OUTPUT_PORT_TYPE
+control[9] <= control[9].DB_MAX_OUTPUT_PORT_TYPE
+control[10] <= <GND>
+control[11] <= <GND>
+control[12] <= <GND>
+control[13] <= <GND>
+control[14] <= <GND>
+control[15] <= <GND>
+
+

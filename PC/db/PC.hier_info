@@ -1,0 +1,94 @@
+|PC
+Dout[0] <= MemAddrReg:inst.out[0]
+Dout[1] <= MemAddrReg:inst.out[1]
+Dout[2] <= MemAddrReg:inst.out[2]
+Dout[3] <= MemAddrReg:inst.out[3]
+PCO => MemAddrReg:inst.LD
+LD => 7404:inst4.2
+UP => 7404:inst5.2
+CLR => 7404:inst6.2
+Din[3] => ProgramCounter:inst3.Din[3]
+Din[3] => MemAddrReg:inst.in2[0]
+Din[2] => ProgramCounter:inst3.Din[2]
+Din[2] => MemAddrReg:inst.in2[1]
+Din[1] => ProgramCounter:inst3.Din[1]
+Din[1] => MemAddrReg:inst.in2[2]
+Din[0] => ProgramCounter:inst3.Din[0]
+Din[0] => MemAddrReg:inst.in2[3]
+
+
+|PC|MemAddrReg:inst
+in1[0] => nxt~3.DATAB
+in1[1] => nxt~2.DATAB
+in1[2] => nxt~1.DATAB
+in1[3] => nxt~0.DATAB
+in2[0] => nxt~3.DATAA
+in2[1] => nxt~2.DATAA
+in2[2] => nxt~1.DATAA
+in2[3] => nxt~0.DATAA
+out[0] <= nxt~3.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= nxt~2.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= nxt~1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= nxt~0.DB_MAX_OUTPUT_PORT_TYPE
+LD => nxt~0.OUTPUTSELECT
+LD => nxt~1.OUTPUTSELECT
+LD => nxt~2.OUTPUTSELECT
+LD => nxt~3.OUTPUTSELECT
+
+
+|PC|ProgramCounter:inst3
+Dout[3] <= 74193:inst.QA
+Dout[2] <= 74193:inst.QB
+Dout[1] <= 74193:inst.QC
+Dout[0] <= 74193:inst.QD
+Din[3] => 74193:inst.A
+Din[2] => 74193:inst.B
+Din[1] => 74193:inst.C
+Din[0] => 74193:inst.D
+CLR => 7404:inst5.2
+UP => 7404:inst6.2
+LD => 74193:inst.LDN
+
+
+|PC|ProgramCounter:inst3|74193:inst
+BON <= 28.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 44.IN0
+LDN => 43.IN0
+B => 53.IN2
+A => 52.IN2
+DN => 90.IN0
+UP => 89.IN0
+C => 54.IN2
+D => 55.IN2
+CON <= 27.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 23.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 24.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 25.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PC|ProgramCounter:inst3|7404:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|PC|ProgramCounter:inst3|7404:inst6
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|PC|7404:inst4
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|PC|7404:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|PC|7404:inst6
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+

@@ -1,0 +1,23 @@
+|MemAddrReg
+in1[0] => nxt.DATAB
+in1[1] => nxt.DATAB
+in1[2] => nxt.DATAB
+in1[3] => nxt.DATAB
+in2[0] => nxt.DATAA
+in2[1] => nxt.DATAA
+in2[2] => nxt.DATAA
+in2[3] => nxt.DATAA
+out[0] <= nxt[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= nxt[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= nxt[2].DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= nxt[3].DB_MAX_OUTPUT_PORT_TYPE
+LD => nxt[0].CLK
+LD => nxt[1].CLK
+LD => nxt[2].CLK
+LD => nxt[3].CLK
+ALT => nxt.OUTPUTSELECT
+ALT => nxt.OUTPUTSELECT
+ALT => nxt.OUTPUTSELECT
+ALT => nxt.OUTPUTSELECT
+
+

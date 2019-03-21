@@ -1,0 +1,571 @@
+$comment
+	File created using the following command:
+		vcd file Lab9_2.msim.vcd -direction
+$end
+$date
+	Fri Apr 06 15:38:15 2018
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Lab9_2_vlg_vec_tst $end
+$var reg 1 ! CLK $end
+$var reg 1 " CLR $end
+$var reg 11 # op [10:0] $end
+$var wire 1 $ control [15] $end
+$var wire 1 % control [14] $end
+$var wire 1 & control [13] $end
+$var wire 1 ' control [12] $end
+$var wire 1 ( control [11] $end
+$var wire 1 ) control [10] $end
+$var wire 1 * control [9] $end
+$var wire 1 + control [8] $end
+$var wire 1 , control [7] $end
+$var wire 1 - control [6] $end
+$var wire 1 . control [5] $end
+$var wire 1 / control [4] $end
+$var wire 1 0 control [3] $end
+$var wire 1 1 control [2] $end
+$var wire 1 2 control [1] $end
+$var wire 1 3 control [0] $end
+$var wire 1 4 sampler $end
+$scope module i1 $end
+$var wire 1 5 gnd $end
+$var wire 1 6 vcc $end
+$var wire 1 7 unknown $end
+$var tri1 1 8 devclrn $end
+$var tri1 1 9 devpor $end
+$var tri1 1 : devoe $end
+$var wire 1 ; Equal0~1_combout $end
+$var wire 1 < CLK~combout $end
+$var wire 1 = CLK~clkctrl_outclk $end
+$var wire 1 > state.S0~feeder_combout $end
+$var wire 1 ? CLR~combout $end
+$var wire 1 @ CLR~clkctrl_outclk $end
+$var wire 1 A state.S0~regout $end
+$var wire 1 B Equal0~0_combout $end
+$var wire 1 C Equal0~2_combout $end
+$var wire 1 D Selector10~0_combout $end
+$var wire 1 E Selector10~0clkctrl_outclk $end
+$var wire 1 F WideNor0~combout $end
+$var wire 1 G WideNor0~clkctrl_outclk $end
+$var wire 1 H Equal1~0_combout $end
+$var wire 1 I nextstate.S6_114~combout $end
+$var wire 1 J state.S6~regout $end
+$var wire 1 K nextstate.S5_121~combout $end
+$var wire 1 L state.S5~regout $end
+$var wire 1 M WideOr0~0_combout $end
+$var wire 1 N nextstate.S1_161~combout $end
+$var wire 1 O state.S1~regout $end
+$var wire 1 P nextstate.S2_151~combout $end
+$var wire 1 Q state.S2~regout $end
+$var wire 1 R nextstate.S3_141~combout $end
+$var wire 1 S state.S3~regout $end
+$var wire 1 T nextstate.S4_131~combout $end
+$var wire 1 U state.S4~regout $end
+$var wire 1 V control~2_combout $end
+$var wire 1 W op~combout [10] $end
+$var wire 1 X op~combout [9] $end
+$var wire 1 Y op~combout [8] $end
+$var wire 1 Z op~combout [7] $end
+$var wire 1 [ op~combout [6] $end
+$var wire 1 \ op~combout [5] $end
+$var wire 1 ] op~combout [4] $end
+$var wire 1 ^ op~combout [3] $end
+$var wire 1 _ op~combout [2] $end
+$var wire 1 ` op~combout [1] $end
+$var wire 1 a op~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+b0 #
+13
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+x4
+05
+16
+x7
+18
+19
+1:
+1;
+0<
+0=
+1>
+1?
+1@
+0A
+1B
+1C
+1D
+1E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+1M
+1N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+$end
+#20000
+0"
+b100000 #
+0?
+1\
+0@
+04
+1F
+1G
+#40000
+1!
+1"
+1<
+1?
+1@
+1=
+14
+#60000
+0!
+0<
+0=
+04
+1A
+1O
+0M
+1P
+10
+03
+0N
+#80000
+1!
+1<
+1=
+14
+#100000
+0!
+0<
+0=
+04
+0O
+1Q
+0P
+1V
+1R
+00
+1/
+#120000
+1!
+1<
+1=
+14
+#140000
+0!
+0<
+0=
+04
+0Q
+1S
+0R
+1T
+#160000
+1!
+1<
+1=
+14
+#180000
+0!
+0<
+0=
+04
+1U
+0S
+1K
+0V
+0T
+1,
+11
+0/
+#200000
+1!
+1<
+1=
+14
+#220000
+0!
+0<
+0=
+04
+0U
+1L
+0K
+1M
+0,
+01
+1*
+1N
+#240000
+1!
+1<
+1=
+14
+#260000
+0!
+0<
+0=
+04
+0L
+1O
+0M
+1P
+0*
+10
+0N
+#280000
+1!
+1<
+1=
+14
+#300000
+0!
+0<
+0=
+04
+0O
+1Q
+0P
+1V
+1R
+00
+1/
+#320000
+1!
+1<
+1=
+14
+#340000
+0!
+0<
+0=
+04
+0Q
+1S
+0R
+1T
+#360000
+1!
+1<
+1=
+14
+#380000
+0!
+0<
+0=
+04
+1U
+0S
+1K
+0V
+0T
+1,
+11
+0/
+#400000
+1!
+1<
+1=
+14
+#420000
+0!
+0<
+0=
+04
+0U
+1L
+0K
+1M
+0,
+01
+1*
+1N
+#440000
+1!
+1<
+1=
+14
+#460000
+b1100000 #
+b1000000 #
+0!
+0\
+1[
+0<
+0=
+04
+1H
+0L
+1O
+0M
+1P
+0*
+10
+0N
+#480000
+1!
+1<
+1=
+14
+#500000
+0!
+0<
+0=
+04
+0O
+1Q
+0P
+1V
+1R
+00
+1/
+#520000
+1!
+1<
+1=
+14
+#540000
+0!
+0<
+0=
+04
+0Q
+1S
+0R
+1T
+#560000
+1!
+1<
+1=
+14
+#580000
+0!
+0<
+0=
+04
+1U
+0S
+1I
+0V
+0T
+1,
+11
+0/
+#600000
+1!
+1<
+1=
+14
+#620000
+0!
+0<
+0=
+04
+0U
+1J
+0I
+1M
+0,
+01
+1+
+1N
+#640000
+1!
+1<
+1=
+14
+#660000
+0!
+0<
+0=
+04
+0J
+1O
+0M
+1P
+0+
+10
+0N
+#680000
+1!
+1<
+1=
+14
+#700000
+0!
+0<
+0=
+04
+0O
+1Q
+0P
+1V
+1R
+00
+1/
+#720000
+1!
+1<
+1=
+14
+#740000
+0!
+0<
+0=
+04
+0Q
+1S
+0R
+1T
+#760000
+1!
+1<
+1=
+14
+#780000
+0!
+0<
+0=
+04
+1U
+0S
+1I
+0V
+0T
+1,
+11
+0/
+#800000
+1!
+1<
+1=
+14
+#820000
+0!
+0<
+0=
+04
+0U
+1J
+0I
+1M
+0,
+01
+1+
+1N
+#840000
+1!
+1<
+1=
+14
+#860000
+0!
+0<
+0=
+04
+0J
+1O
+0M
+1P
+0+
+10
+0N
+#880000
+1!
+1<
+1=
+14
+#900000
+0!
+0<
+0=
+04
+0O
+1Q
+0P
+1V
+1R
+00
+1/
+#920000
+1!
+1<
+1=
+14
+#940000
+0!
+0<
+0=
+04
+0Q
+1S
+0R
+1T
+#960000
+1!
+1<
+1=
+14
+#980000
+0!
+0<
+0=
+04
+1U
+0S
+1I
+0V
+0T
+1,
+11
+0/
+#1000000

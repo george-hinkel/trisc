@@ -1,0 +1,36 @@
+module PartBStatemachine(op,CLK,CLR,control);
+	input [10:0] op;
+	input CLK,CLR;
+	output reg [15:0] control;
+	reg [3:0] state,nextstate;
+	parameter S0=4'b0000,S1=4'b0001,S2=4'b0010,S3=4'b0011,S4=4'b0100,S5=4'b0101,S6=4'b0110,S7=4'b0111,S8=4'b1000,S9=4'b1001,S10=4'b1010,S11=4'b1011,S12=4'b1100,S13=4'b1101,S14=4'b1110,S15=4'b1111;
+	parameter INC=11'b00000100000,CLRop=11'b00000010000,LDA=11'b10000000000,STA=11'b01000000000;
+	parameter C0=16'b0000000000000001,C2=16'b0000000000000100,C3=16'b0000000000001000,C4=16'b0000000000010000,C5=16'b0000000000100000,C7=16'b0000000010000000,C8=16'b0000000100000000,C9=16'b0000001000000000,C11=16'b0000100000000000,C15=16'b1000000000000000;
+	
+		always@(negedge CLK,negedge CLR)
+			if(CLR==0)state<=S0;else state<=nextstate;
+		always@(state,op)
+			case(state)
+				S0: begin nextstate <= S1; control <= C0; end
+				S1: begin nextstate <= S2; control <= C3; end
+				S2: begin nextstate <= S3; control <= (C4+C3); end
+				S3: begin nextstate <= S4; control <= (C4+C3); end
+				S4: begin control= (C2+C7);
+					case(op)
+						INC: nextstate <= S5;
+						CLRop: nextstate <= S6;
+						LDA: nextstate <= S7;
+						STA: nextstate <= S11;
+					endcase
+				end
+				S5: begin nextstate <= S1; control <= C9; end
+				S6: begin nextstate <= S1; control <= C8; end
+				S7: begin nextstate <= S8; control <= 16'b0; end
+				S8: begin nextstate <= S9; control <= C4; end
+				S9: begin nextstate <= S10; control <= C4; end
+				S10: begin nextstate <= S1; control <= C11; end
+				S11: begin nextstate <= S12; control <= C15; end
+				S12: begin nextstate <= S13; control <= (C4+C5); end	
+				S13: begin nextstate <= S1; control <= (C4+C5); end
+			endcase
+endmodule

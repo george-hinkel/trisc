@@ -1,0 +1,278 @@
+|Lab5
+R3 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+S0 => demux:inst4.s0
+S0 => demux:inst3.s0
+S0 => demux:inst.s0
+S0 => demux:inst2.s0
+S1 => demux:inst4.s1
+S1 => demux:inst3.s1
+S1 => demux:inst.s1
+S1 => demux:inst2.s1
+A0 => demux:inst4.ai
+B0 => demux:inst4.bi
+A1 => demux:inst3.ai
+B1 => demux:inst3.bi
+A2 => demux:inst.ai
+B2 => demux:inst.bi
+A3 => demux:inst2.ai
+A3 => ovr:inst1.a
+B3 => demux:inst2.bi
+B3 => ovr:inst1.b
+R2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+R1 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+R0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+OVR <= ovr:inst1.o
+Cout <= Lab2:inst5.Cout
+h00 <= Lab4_4:instdecoder.ao
+h01 <= Lab4_4:instdecoder.bo
+h02 <= Lab4_4:instdecoder.co
+h03 <= Lab4_4:instdecoder.do
+h04 <= Lab4_4:instdecoder.eo
+h05 <= Lab4_4:instdecoder.fo
+h06 <= Lab4_4:instdecoder.go
+h10 <= Lab4_4:instdecoder.ai
+h11 <= Lab4_4:instdecoder.bi
+h12 <= Lab4_4:instdecoder.ci
+h13 <= Lab4_4:instdecoder.di
+h14 <= Lab4_4:instdecoder.ei
+h15 <= Lab4_4:instdecoder.fi
+h16 <= Lab4_4:instdecoder.gi
+
+
+|Lab5|and4bit:inst6
+a0 => s0.IN0
+a1 => s1.IN0
+a2 => s2.IN0
+a3 => s3.IN0
+b0 => s0.IN1
+b1 => s1.IN1
+b2 => s2.IN1
+b3 => s3.IN1
+s0 <= s0.DB_MAX_OUTPUT_PORT_TYPE
+s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
+s2 <= s2.DB_MAX_OUTPUT_PORT_TYPE
+s3 <= s3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab5|demux:inst4
+s0 => Decoder1.IN0
+s0 => Mux0.IN4
+s0 => Mux1.IN4
+s1 => Decoder1.IN1
+s1 => Mux0.IN5
+s1 => Mux1.IN5
+ai => Decoder0.IN0
+bi => Decoder0.IN1
+a0 <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+a2 <= a2.DB_MAX_OUTPUT_PORT_TYPE
+a3 <= a3.DB_MAX_OUTPUT_PORT_TYPE
+b0 <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+b2 <= b2.DB_MAX_OUTPUT_PORT_TYPE
+b3 <= b3.DB_MAX_OUTPUT_PORT_TYPE
+sub <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab5|demux:inst3
+s0 => Decoder1.IN0
+s0 => Mux0.IN4
+s0 => Mux1.IN4
+s1 => Decoder1.IN1
+s1 => Mux0.IN5
+s1 => Mux1.IN5
+ai => Decoder0.IN0
+bi => Decoder0.IN1
+a0 <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+a2 <= a2.DB_MAX_OUTPUT_PORT_TYPE
+a3 <= a3.DB_MAX_OUTPUT_PORT_TYPE
+b0 <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+b2 <= b2.DB_MAX_OUTPUT_PORT_TYPE
+b3 <= b3.DB_MAX_OUTPUT_PORT_TYPE
+sub <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab5|demux:inst
+s0 => Decoder1.IN0
+s0 => Mux0.IN4
+s0 => Mux1.IN4
+s1 => Decoder1.IN1
+s1 => Mux0.IN5
+s1 => Mux1.IN5
+ai => Decoder0.IN0
+bi => Decoder0.IN1
+a0 <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+a2 <= a2.DB_MAX_OUTPUT_PORT_TYPE
+a3 <= a3.DB_MAX_OUTPUT_PORT_TYPE
+b0 <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+b2 <= b2.DB_MAX_OUTPUT_PORT_TYPE
+b3 <= b3.DB_MAX_OUTPUT_PORT_TYPE
+sub <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab5|demux:inst2
+s0 => Decoder1.IN0
+s0 => Mux0.IN4
+s0 => Mux1.IN4
+s1 => Decoder1.IN1
+s1 => Mux0.IN5
+s1 => Mux1.IN5
+ai => Decoder0.IN0
+bi => Decoder0.IN1
+a0 <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+a2 <= a2.DB_MAX_OUTPUT_PORT_TYPE
+a3 <= a3.DB_MAX_OUTPUT_PORT_TYPE
+b0 <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+b2 <= b2.DB_MAX_OUTPUT_PORT_TYPE
+b3 <= b3.DB_MAX_OUTPUT_PORT_TYPE
+sub <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab5|Lab2:inst5
+Cout <= RippleCarryAdder:inst.Cout
+A0 => RippleCarryAdder:inst.A0
+MODE => inst3.IN0
+MODE => inst4.IN0
+MODE => inst5.IN0
+MODE => inst6.IN0
+MODE => RippleCarryAdder:inst.Cin
+B0 => inst3.IN1
+A1 => RippleCarryAdder:inst.A1
+B1 => inst4.IN1
+A2 => RippleCarryAdder:inst.A2
+B2 => inst5.IN1
+A3 => RippleCarryAdder:inst.A3
+B3 => inst6.IN1
+S0 <= RippleCarryAdder:inst.S0
+S1 <= RippleCarryAdder:inst.S1
+S2 <= RippleCarryAdder:inst.S2
+S3 <= RippleCarryAdder:inst.S3
+
+
+|Lab5|Lab2:inst5|RippleCarryAdder:inst
+S0 <= FullAdder:inst.P
+A0 => FullAdder:inst.A
+B0 => FullAdder:inst.B
+Cin => FullAdder:inst.C
+S1 <= FullAdder:inst1.P
+A1 => FullAdder:inst1.A
+B1 => FullAdder:inst1.B
+S2 <= FullAdder:inst2.P
+A2 => FullAdder:inst2.A
+B2 => FullAdder:inst2.B
+S3 <= FullAdder:inst3.P
+A3 => FullAdder:inst3.A
+B3 => FullAdder:inst3.B
+Cout <= FullAdder:inst3.Q
+
+
+|Lab5|Lab2:inst5|RippleCarryAdder:inst|FullAdder:inst
+P <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+A => inst.IN0
+B => inst3.IN1
+B => inst2.IN0
+B => inst.IN1
+C => inst4.IN1
+C => inst1.IN1
+C => inst2.IN1
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab5|Lab2:inst5|RippleCarryAdder:inst|FullAdder:inst1
+P <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+A => inst.IN0
+B => inst3.IN1
+B => inst2.IN0
+B => inst.IN1
+C => inst4.IN1
+C => inst1.IN1
+C => inst2.IN1
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab5|Lab2:inst5|RippleCarryAdder:inst|FullAdder:inst2
+P <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+A => inst.IN0
+B => inst3.IN1
+B => inst2.IN0
+B => inst.IN1
+C => inst4.IN1
+C => inst1.IN1
+C => inst2.IN1
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab5|Lab2:inst5|RippleCarryAdder:inst|FullAdder:inst3
+P <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+A => inst.IN0
+B => inst3.IN1
+B => inst2.IN0
+B => inst.IN1
+C => inst4.IN1
+C => inst1.IN1
+C => inst2.IN1
+Q <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab5|xor4bit:inst7
+a0 => s0.IN0
+a1 => s1.IN0
+a2 => s2.IN0
+a3 => s3.IN0
+b0 => s0.IN1
+b1 => s1.IN1
+b2 => s2.IN1
+b3 => s3.IN1
+s0 <= s0.DB_MAX_OUTPUT_PORT_TYPE
+s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
+s2 <= s2.DB_MAX_OUTPUT_PORT_TYPE
+s3 <= s3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab5|ovr:inst1
+a => o.IN0
+a => o.IN0
+a => o.IN0
+a => o.IN0
+b => o.IN1
+b => o.IN1
+b => o.IN1
+b => o.IN1
+s => o.IN1
+s => o.IN1
+s => o.IN1
+s => o.IN1
+m => o.IN1
+m => o.IN1
+m => o.IN1
+m => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab5|Lab4_4:instdecoder
+W => Decoder0.IN0
+X => Decoder0.IN1
+Y => Decoder0.IN2
+Z => Decoder0.IN3
+ao <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+bo <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+do <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+eo <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+fo <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+go <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+ai <= <VCC>
+bi <= <VCC>
+ci <= <VCC>
+di <= <VCC>
+ei <= <VCC>
+fi <= <VCC>
+gi <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,213 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'PartBController:inst|PartBStatemachine:inst|state.S4'
+Slack : -6.325
+TNS   : -34.644
+
+Type  : Slow Model Setup 'PartBController:inst|PartBStatemachine:inst|state.S10'
+Slack : -6.073
+TNS   : -16.695
+
+Type  : Slow Model Setup 'PartBController:inst|PartBStatemachine:inst|state.S5'
+Slack : -5.916
+TNS   : -21.640
+
+Type  : Slow Model Setup 'CLOCK'
+Slack : -3.664
+TNS   : -93.782
+
+Type  : Slow Model Setup 'Lab6:inst6|nxt[0]'
+Slack : -2.409
+TNS   : -16.943
+
+Type  : Slow Model Setup 'PartBController:inst|Lab9_1:inst2|op[0]'
+Slack : -1.127
+TNS   : -3.181
+
+Type  : Slow Model Hold 'PartBController:inst|Lab9_1:inst2|op[0]'
+Slack : -5.382
+TNS   : -34.818
+
+Type  : Slow Model Hold 'CLOCK'
+Slack : -4.419
+TNS   : -30.502
+
+Type  : Slow Model Hold 'PartBController:inst|PartBStatemachine:inst|state.S10'
+Slack : -3.062
+TNS   : -6.141
+
+Type  : Slow Model Hold 'PartBController:inst|PartBStatemachine:inst|state.S4'
+Slack : -2.910
+TNS   : -3.498
+
+Type  : Slow Model Hold 'PartBController:inst|PartBStatemachine:inst|state.S5'
+Slack : -1.480
+TNS   : -2.367
+
+Type  : Slow Model Hold 'Lab6:inst6|nxt[0]'
+Slack : -1.123
+TNS   : -7.393
+
+Type  : Slow Model Recovery 'PartBController:inst|PartBStatemachine:inst|state.S10'
+Slack : -6.413
+TNS   : -17.846
+
+Type  : Slow Model Recovery 'PartBController:inst|PartBStatemachine:inst|state.S5'
+Slack : -6.271
+TNS   : -23.146
+
+Type  : Slow Model Recovery 'PartBController:inst|PartBStatemachine:inst|state.S4'
+Slack : -2.310
+TNS   : -8.237
+
+Type  : Slow Model Recovery 'PartBController:inst|Lab9_1:inst2|op[0]'
+Slack : 3.621
+TNS   : 0.000
+
+Type  : Slow Model Removal 'PartBController:inst|Lab9_1:inst2|op[0]'
+Slack : -4.994
+TNS   : -19.374
+
+Type  : Slow Model Removal 'PartBController:inst|PartBStatemachine:inst|state.S10'
+Slack : -2.646
+TNS   : -4.818
+
+Type  : Slow Model Removal 'PartBController:inst|PartBStatemachine:inst|state.S5'
+Slack : -1.064
+TNS   : -1.425
+
+Type  : Slow Model Removal 'PartBController:inst|PartBStatemachine:inst|state.S4'
+Slack : 2.084
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'PartBController:inst|PartBStatemachine:inst|state.S10'
+Slack : -2.323
+TNS   : -24.700
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK'
+Slack : -2.064
+TNS   : -159.091
+
+Type  : Slow Model Minimum Pulse Width 'PartBController:inst|PartBStatemachine:inst|state.S4'
+Slack : -0.611
+TNS   : -9.776
+
+Type  : Slow Model Minimum Pulse Width 'PartBController:inst|PartBStatemachine:inst|state.S5'
+Slack : -0.611
+TNS   : -4.888
+
+Type  : Slow Model Minimum Pulse Width 'PartBController:inst|Lab9_1:inst2|op[0]'
+Slack : -0.556
+TNS   : -23.352
+
+Type  : Slow Model Minimum Pulse Width 'Lab6:inst6|nxt[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'PartBController:inst|PartBStatemachine:inst|state.S10'
+Slack : -2.910
+TNS   : -6.940
+
+Type  : Fast Model Setup 'PartBController:inst|PartBStatemachine:inst|state.S4'
+Slack : -2.681
+TNS   : -11.546
+
+Type  : Fast Model Setup 'PartBController:inst|PartBStatemachine:inst|state.S5'
+Slack : -2.147
+TNS   : -7.394
+
+Type  : Fast Model Setup 'CLOCK'
+Slack : -1.460
+TNS   : -31.550
+
+Type  : Fast Model Setup 'Lab6:inst6|nxt[0]'
+Slack : -0.414
+TNS   : -1.144
+
+Type  : Fast Model Setup 'PartBController:inst|Lab9_1:inst2|op[0]'
+Slack : -0.186
+TNS   : -0.186
+
+Type  : Fast Model Hold 'CLOCK'
+Slack : -2.708
+TNS   : -18.886
+
+Type  : Fast Model Hold 'PartBController:inst|Lab9_1:inst2|op[0]'
+Slack : -2.543
+TNS   : -12.868
+
+Type  : Fast Model Hold 'PartBController:inst|PartBStatemachine:inst|state.S4'
+Slack : -1.685
+TNS   : -1.685
+
+Type  : Fast Model Hold 'PartBController:inst|PartBStatemachine:inst|state.S10'
+Slack : -1.303
+TNS   : -2.800
+
+Type  : Fast Model Hold 'PartBController:inst|PartBStatemachine:inst|state.S5'
+Slack : -0.804
+TNS   : -1.668
+
+Type  : Fast Model Hold 'Lab6:inst6|nxt[0]'
+Slack : -0.404
+TNS   : -2.630
+
+Type  : Fast Model Recovery 'PartBController:inst|PartBStatemachine:inst|state.S10'
+Slack : -3.165
+TNS   : -7.799
+
+Type  : Fast Model Recovery 'PartBController:inst|PartBStatemachine:inst|state.S5'
+Slack : -2.402
+TNS   : -8.517
+
+Type  : Fast Model Recovery 'PartBController:inst|PartBStatemachine:inst|state.S4'
+Slack : -1.316
+TNS   : -4.872
+
+Type  : Fast Model Recovery 'PartBController:inst|Lab9_1:inst2|op[0]'
+Slack : 2.255
+TNS   : 0.000
+
+Type  : Fast Model Removal 'PartBController:inst|Lab9_1:inst2|op[0]'
+Slack : -2.420
+TNS   : -9.556
+
+Type  : Fast Model Removal 'PartBController:inst|PartBStatemachine:inst|state.S10'
+Slack : -1.026
+TNS   : -1.908
+
+Type  : Fast Model Removal 'PartBController:inst|PartBStatemachine:inst|state.S5'
+Slack : -0.527
+TNS   : -0.707
+
+Type  : Fast Model Removal 'PartBController:inst|PartBStatemachine:inst|state.S4'
+Slack : 1.818
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK'
+Slack : -2.000
+TNS   : -151.380
+
+Type  : Fast Model Minimum Pulse Width 'PartBController:inst|PartBStatemachine:inst|state.S10'
+Slack : -1.127
+TNS   : -9.930
+
+Type  : Fast Model Minimum Pulse Width 'PartBController:inst|PartBStatemachine:inst|state.S4'
+Slack : -0.500
+TNS   : -8.000
+
+Type  : Fast Model Minimum Pulse Width 'PartBController:inst|PartBStatemachine:inst|state.S5'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'PartBController:inst|Lab9_1:inst2|op[0]'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Lab6:inst6|nxt[0]'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------
